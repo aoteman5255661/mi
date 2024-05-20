@@ -13,7 +13,6 @@ jobs:
     steps:
       - name: Git push assets to "meta-rule" branch
         run: |
-            cd meta-rule || exit 1
             ls
             git init
             git config --local user.name "github-actions[bot]"
