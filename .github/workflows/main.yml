@@ -23,6 +23,7 @@ jobs:
             git add .
             git commit -m "Released on"
             echo "${{ github.actor }}"
+            echo "${{ secrets.GITHUB_TOKEN }}"
             echo "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
             git remote add origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
             git push -f -u origin main
